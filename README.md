@@ -1,12 +1,42 @@
-# React + Vite
+Diabetes Health Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Introduction  
+This is a simple web application to track glucose levels, meals, and health status.  
+The project is built using React and Vite for fast performance and a clean user experience.
 
-Currently, two official plugins are available:
+Getting Started  
+To run this project locally, follow the steps below:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone the repository  
+   git clone https://github.com/yashvni-chirri/diabetes-health-dashboard.git  
+   cd diabetes-health-dashboard  
 
-## Expanding the ESLint configuration
+2. Install dependencies  
+   npm install  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Start the development server  
+   npm run dev  
+
+The app will be available at http://localhost:5173 by default.
+
+Project Overview  
+- Add and view glucose records  
+- Track food intake  
+- Monitor health status such as Low, Normal, or High  
+
+
+Folder Structure  
+diabetes-health-dashboard/  
+  public/             - Static files  
+  src/                - Source code  
+    assets/           - Images and assets  
+    App.jsx           - Main component  
+    App.css           - Styling  
+    main.jsx          - Entry point  
+  screenshots/        - Screenshots of the app  
+  package.json        - Dependencies and scripts  
+  vite.config.js      - Vite configuration  
+  README.md           - Project documentation  
+
+License  
+This project is licensed under the MIT License.
