@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  color: #222;
+  text-align: center;
+}
+
+.app {
+  padding: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+  color: #fff;
+  text-shadow: 2px 2px 4px #00000055;
+}
+
+.form {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 200px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.chart-box {
+  background: #ffffffaa;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.records {
+  margin-top: 20px;
+}
+
+.record {
+  background: #ffffffcc;
+  padding: 15px;
+  margin: 10px auto;
+  width: 60%;
+  border-radius: 15px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.record:hover {
+  transform: translateY(-5px);
+}
+
+.record.high {
+  border-left: 6px solid red;
+}
+
+.record.normal {
+  border-left: 6px solid green;
+}
+
+.status {
+  color: red;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
